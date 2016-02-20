@@ -1,26 +1,40 @@
 body {
 	font-family: Helvetica, Times, sans-serif;
+
 }
 
 
 h1 {
 	text-align: center;
+	font-size: 1.75em;
 }
 
 * {
 	box-sizing: border-box;
+	font-size: 16px;
 }
 .container {
 	margin-left: auto;
 	margin-right: auto;
 }
 
+#head1 {
+	background-color: red;
+}
+
+#head2 {
+	background-color: blue;
+}
+
+#head3 {
+	background-color: green;
+}
 section > header {
 	float:right;
 	position: relative;
-	background-color: white;
-	color: red;
-	height: 20px;
+	font-size: 1.25em;
+	color: white;
+	height: 30px;
 	text-align: center;
 	width: 100px;
 	border: 1px solid black;
@@ -37,7 +51,7 @@ section > header {
 }
 .responsive p {
 		padding: 10px;
-		padding-top: 10px;
+		padding-top: 20px;
 }
 
 
@@ -50,22 +64,24 @@ section > header {
 	}
 	.responsive p {
 		padding: 10px;
+		padding-top: 20px;
 	}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
 	.responsive {
-		width: 48%;
+		width: 47%;
 		float: left;
 		margin-left:10px;
-		margin-right: auto;
+		margin-right: 10px;
 		
 	}
 	.responsive p{		
 		padding: 10px;	
+		padding-top: 20px;
 	}
 	.container .responsive:nth-child(3) {
-		width: 97.25%;
+		width: 96.5%;
 		
 	}
 
