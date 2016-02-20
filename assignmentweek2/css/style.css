@@ -1,0 +1,72 @@
+body {
+	font-family: Helvetica, Times, sans-serif;
+}
+
+
+h1 {
+	text-align: center;
+}
+
+* {
+	box-sizing: border-box;
+}
+.container {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+section > header {
+	float:right;
+	position: relative;
+	background-color: white;
+	color: red;
+	height: 20px;
+	text-align: center;
+	width: 100px;
+	border: 1px solid black;
+}
+
+
+.responsive {
+	background-color: maroon;
+	width: 100%;
+	margin:10px auto;
+	border:1px solid black ;
+	
+	color:white;
+}
+.responsive p {
+		padding: 10px;
+		padding-top: 10px;
+}
+
+
+
+@media (min-width: 992px) {
+	.responsive {
+		width:31%;
+		float: left;
+		margin: 10px;
+	}
+	.responsive p {
+		padding: 10px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.responsive {
+		width: 48%;
+		float: left;
+		margin-left:10px;
+		margin-right: auto;
+		
+	}
+	.responsive p{		
+		padding: 10px;	
+	}
+	.container .responsive:nth-child(3) {
+		width: 97.25%;
+		
+	}
+
+}
